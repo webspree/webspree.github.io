@@ -232,12 +232,13 @@
             <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
             
             <script>
+                const proxy = 'https://cors-anywhere.herokuapp.com/','
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzVv4Dr5Uw2QWZfkFo092okFfm3NUdUw-3FnRww0LvlH7BzNF2V/exec'
                 const form = document.forms['submit-to-google-sheet']
                 
                 form.addEventListener('submit', e => {
                     e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    fetch(proxy + scriptURL, { method: 'POST', body: new FormData(form)})
                     .then(response => console.log('Success!', response))
                     .catch(error => console.error('Error!', error.message))
                 })
