@@ -185,12 +185,14 @@
                 </div>
                 <div class="row">
                     <div class="form">
-                            <form id="contact-form" name="submit-to-google-sheet">
-                                <input type="email" name="mailAddress" placeholder="Enter your email">
-                                <input type="text" name="name" placeholder="Enter your name">
-                                <input type="text" name="phoneNumber" placeholder="Enter your phone">
-                                <input type="text" name="subject" placeholder="Subject">
-                                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <form id="contact-form" name="submit-to-google-sheet" 
+                            action="https://docs.google.com/forms/d/e/1FAIpQLSfR9il-fEs1K-qThpe65mTFFvVOJ7JKhB0WsIT0bxbGNOfjbA/formResponse"
+                            method="POST" target="hidden_iframe" accept-charset="UTF-8">
+                                <input type="email" name="emailAddress" placeholder="Enter your email">
+                                <input type="text" name="entry.1065046570" placeholder="Enter your name">
+                                <input type="text" name="entry.1166974658" placeholder="Enter your phone">
+                                <input type="text" name="entry.1546161053" placeholder="Subject">
+                                <textarea name="entry.839337160" id="" cols="30" rows="10" placeholder="Message"></textarea>
                                 <button type="submit" name="submit" id="submit-form">Send us a Message</button>
                             </form>
                         </div>
@@ -230,18 +232,7 @@
             <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
             <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
             <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
             
-            <script>
-                const proxy = 'https://cors-anywhere.herokuapp.com/','
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbzVv4Dr5Uw2QWZfkFo092okFfm3NUdUw-3FnRww0LvlH7BzNF2V/exec'
-                const form = document.forms['submit-to-google-sheet']
-                
-                form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(proxy + scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => console.log('Success!', response))
-                    .catch(error => console.error('Error!', error.message))
-                })
-            </script>
     </body>
 </html>
