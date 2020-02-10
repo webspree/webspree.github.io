@@ -1,0 +1,86 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    p {font-size: 90%;}
+
+    .row { padding: 0 7%;}
+
+    .main-nav {
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 39%;
+        padding: 1px 2%;
+    }
+
+    h2 {
+        font-size: 140%;
+        margin-bottom: 20px;
+    }
+    
+    .section-header {
+        font-size: 150%;
+    }
+
+    .hero-text-box .btn {
+        margin-top: 30px;
+    }
+
+    .client-logo-container {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .client-logo-container img {
+        width: 30%;
+    }
+
+    .img-box {
+        width: 230px;
+        height: auto;
+        margin-left: 18%;
+    }
+
+    .section-cutting-edge .icon-tools {
+        margin-top: -20px;
+    }
+
+    .icon-tools {
+        width: 75%;
+    }
+    
+
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    p {font-size: 80%;}
+
+    .main-nav {
+        margin-top: 10px;
+
+    }
+
+    .row { padding: 0 10%; margin: 0%}
+
+    .logo {
+        width: 39%;
+        padding: 1px 2%;
+    }
+
+}
