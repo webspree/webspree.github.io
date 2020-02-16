@@ -465,4 +465,4 @@ footer .copyright {
 }
 
 .sticky .logo { display: none; }
-.sticky { display: block; }
+.sticky .mobile-logo { display: block; }

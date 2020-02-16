@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   /* For the sticky navigation */
-  $('.hero-text-box').waypoint(function(direction) {
+  $('.js--section-about').waypoint(function(direction) {
     if (direction == "down") {
         $('nav').addClass('sticky');
     } else {
