@@ -300,6 +300,11 @@ header {
 .client-logo-container {
     padding: 10px;
     margin: 20px;
+    transition: 0.3s;
+}
+
+.client-logo-container:hover {
+    transform: scale(1.1);
 }
 
 /* ----------------------------------------------- */
