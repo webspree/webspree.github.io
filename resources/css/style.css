@@ -100,7 +100,7 @@ input[type=submit] {
 input[type=submit] {
     background-color: #72B874;
     border: 1px solid #72B874;
-    color: #4D4B49;
+    color: #fff;
     margin-right: 15px;
 }
 
@@ -168,6 +168,12 @@ header {
 
 .hero-text-box .btn {
     margin-top: 50px;
+}
+
+.hero-text-box p {
+    font-size: 120%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 .work-together-image {
