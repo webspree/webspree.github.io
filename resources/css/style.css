@@ -177,6 +177,7 @@ header {
 }
 
 .work-together-image {
+    margin-left: -10px;
     
 }
 
@@ -414,3 +415,54 @@ footer p {
 footer .copyright {
     text-align: center;
 }
+
+/** MOBILE */
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #72B874;
+}
+
+.mobile-logo {
+    display: none;
+    height: 80px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+.work-together-image-mobile, .tear-down-img-mobile, 
+.mobile-application-img-mobile, .conversation-img-mobile {
+    display: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Sticky navi */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky { display: block; }
