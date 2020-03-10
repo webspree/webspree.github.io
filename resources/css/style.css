@@ -299,8 +299,7 @@ header {
 
 
 .client-logo-container {
-    padding: 10px;
-    margin: 20px;
+    width: 250px;
     transition: 0.3s;
 }
 
@@ -466,3 +465,9 @@ footer .copyright {
 
 .sticky .logo { display: none; }
 .sticky .mobile-logo { display: block; }
+
+.redcore-image {
+    margin-left: 100%;
+    height: auto;
+    width: 250px;
+}
